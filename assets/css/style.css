@@ -1,0 +1,445 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); 
+:root{
+    --primary:#761a8d;
+    --secondary:#521262;
+    --white:#fff;
+    --black:#000;
+    --bg:#e6e6e6;
+    /* --skin:#ead5cd75; */
+}
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+ body{
+     margin: 0;
+     padding: 0;
+     /* font-family: "Archivo", sans-serif; */
+     font-family: "DM Sans", sans-serif;
+ }
+ ul{
+     list-style: none;
+     padding-left: 0;
+     margin-bottom: 0;
+}
+ a{
+     text-decoration: none;
+}
+ h1, h2, h3, h4, h5, h6{
+    font-family: "DM Sans", sans-serif;
+}
+ p{
+    font-family: "DM Sans", sans-serif;
+}
+ img{
+     width: 100%;
+}
+ .container{
+     max-width: 1300px;
+}
+ .ptb-70{
+     padding: 70px 0;
+}
+ .ptb-50{
+     padding: 50px 0;
+}
+ .ptb-30{
+     padding: 30px 0;
+}
+ p{
+     font-size: 18px;
+     color: var(--black);
+     margin-bottom: 10px;
+}
+ h3 {
+    font-size: 35px;
+    line-height: 1.1;
+    color: var(--primary);
+    font-weight: 700;
+
+}
+h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--primary);
+}
+.bg{
+    background-color: var(--bg);
+}
+/* global css end here */
+/* header css start here */
+ .site-header {
+     padding: 10px 0px;
+     width: 100%;
+     background-color: #e6e6e6;
+
+     box-shadow: rgb(0 0 0 / 14%) 0px 0px 15px;
+     transition: all 0.5s linear;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+
+}
+
+
+ .site-header.fixed{
+     position: absolute;
+     top: 0;
+     z-index: 99;
+}
+ .site-logo img {
+     max-width: 300px;
+}
+ .toggle, .close {
+     display: none;
+}
+ .nav-links ul {
+     display: flex;
+     gap: 50px;
+     align-items: center;
+}
+ .site-header nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ .nav-links ul li a{
+     color: var(--primary);
+     text-transform: capitalize;
+     font-weight: 600;
+     font-size: 20px;
+     position: relative;
+     display: inline-block;
+     
+}
+.nav-links ul li a.active{
+    color: var(--secondary);
+}
+
+ .nav-links ul li a:hover {
+     color: var(--black);
+}
+/* header css end here */
+
+
+/* banner section css start here */
+.site-banner{
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+}
+.site-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+.banner-wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.banner-txt {
+    width: 60%;
+    margin: 0 auto;
+}
+.banner-txt h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.wel-come-txt{
+    width: 60%;
+}
+.wel-come-img {
+    width:38%;
+    height: 390px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+.wel-come-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.wel-come-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-wrap{
+    background-image: url(../images/wel-come-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+.home-wrap::before, .home-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.5;
+}
+
+
+.home-wrap:hover::before, .home-wrap::after{
+    height: 100%;
+    transition: all 0.5s linear;
+}
+.home-txt{
+    position: relative;
+    z-index: 9;
+}
+.home-txt h4 a{
+color: var(--white);
+}
+.read-more a {
+    font-size: 18px;
+    padding: 8px 35px;
+    background-color: #fff;
+    color: #521262;
+    border: 1px solid #521262;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    line-height: inherit;
+    transition: all 0.3s linear;
+
+}
+.read-more a:hover{
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+/* banner section css end here */
+.sub-banner{
+    padding: 70px 0;
+}
+.sub-banner .row{
+    align-items: center;
+}
+.sub-banner-img {
+    height: 90vh;
+}
+.sub-banner-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.casino-txt .read-more a{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.casino-txt .read-more a:hover{
+    background-color: transparent;
+    color: var(--secondary);
+    border-color: #521262;
+}
+.casino-img {
+    width: 40%;
+    overflow: hidden;
+}
+.casino-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.casino-txt {
+    width: 60%;
+    padding: 10px 0;
+}
+.casino-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.site-heading {
+    text-align: center;
+    margin: 0px 0px 40px 0;
+}
+.site-heading h3{
+    text-decoration: underline;
+}
+.casino-wrap{
+    margin-bottom: 50px;
+    background-color: var(--bg);
+    padding: 30px 0;
+}
+.casino-wrap:last-child{
+    margin-bottom: 0;
+}
+
+.bottom-txt{
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.bottom-txt::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+.bottom-txt p{
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.casino-txt .read-more {
+    margin-top: 20px;
+}
+
+
+
+/* footer section css start here */
+ .site-footer{
+     box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px;
+     background-color: #e6e6e6;
+}
+ .footer-logo img {
+     max-width: 300px;
+}
+ 
+ .footer-heading h4 {
+    color: var(--skin);
+     font-size: 35px;
+}
+ .footer-links ul li a:hover{
+     color: var(--light-pink);
+}
+ .footer-links ul li a {
+     font-size: 16px;
+     text-transform: capitalize;
+     color: var(--primary);
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     gap: 10px;
+}
+ .footer-links ul li {
+     margin-bottom: 5px;
+}
+.social-links ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    justify-content: center;
+}
+.social-links ul li a i{
+    color: var(--primary);
+    height: 45px;
+    width: 45px;
+    margin: 0 5px;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 32px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.social-links ul li a i:hover {
+    transform: translateY(-10px);
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: #521262;
+}
+
+.footer-wrap {
+    text-align: center;
+}
+.copy-right p {
+    color: var(--primary);
+}
+.copy-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #761a8d;
+}
+/* footer section css end here */
+/* cookies css star here */
+ #cookies-popup {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background-color:var(--white);
+     color: var(--black);
+     padding: 20px 20px;
+     text-align: center;
+     box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px;
+     z-index: 99;
+    display: none;
+}
+ #cookies-popup p {
+     margin: 0;
+     color: var(--black);
+}
+ #cookies-popup button {
+     background-color: var(--dark-pink);
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     margin-top: 10px;
+     border-radius: 10px;
+}
+ #accept-cookies:hover {
+     background-color: var(--creme);
+}
+/* cookies css end here */
+.america-wrap .america-txt .contact-btn a:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
