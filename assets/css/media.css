@@ -57,9 +57,17 @@
     .bottom-txt p {
         width: 70%;
     }
+    .casino-txt {
+        padding: 25px 0;
+    }
+    .contact-banner {
+        height: 400px;
+    }
 }
 @media(max-width:991px){
-  
+    .casino-txt {
+        padding: 10px 0;
+    }
     .nav-links ul {
         gap: 10px;
         align-items: flex-start;
@@ -199,6 +207,12 @@
     }
     p {
         font-size: 15px;
+    }
+    .contact-banner {
+        height: 350px;
+    }
+    .contact-bnr-wrap h3 {
+        padding: 0 10px;
     }
 }
 @media(max-width:575px){

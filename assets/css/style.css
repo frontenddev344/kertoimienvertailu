@@ -266,6 +266,25 @@ color: var(--white);
 .casino-img {
     width: 40%;
     overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  
+}
+.casino-img::before{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+height: 0%;
+width: 100%;
+background-color: #000;
+opacity: 0.5;
+transition: all 0.5s linear;
+}
+.casino-img:hover::before{
+    height: 100%;
+    
+    
 }
 .casino-img img{
     height: 100%;
@@ -274,7 +293,7 @@ color: var(--white);
 }
 .casino-txt {
     width: 60%;
-    padding: 10px 0;
+    padding: 45px 0;
 }
 .casino-box {
     display: flex;
@@ -328,8 +347,59 @@ color: var(--white);
 .casino-txt .read-more {
     margin-top: 20px;
 }
+.contact-banner{
+    background-image: url(../images/contact-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+padding-top: 50px;
 
+    position: relative;
+}
+.contact-banner::before{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #000;
+opacity: 0.5;
+}
+.contact-bnr-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
 
+}
+.contact-wrap{
+    margin: 20px 0;
+}
+.contact-bnr-wrap h3{
+    color: #fff;
+}
+.privacy-wrap{
+    margin: 20px 0;
+}
+.privacy-wrap ul{
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style: disc;
+}
+.privacy-banner{
+    background-image: url(../images/privacy-banner.jpg);
+}
+.term-banner{
+    background-image: url(../images/term-banner.jpg);
+}
+strong{
+    color: var(--primary);
+}
 
 /* footer section css start here */
  .site-footer{
@@ -414,20 +484,20 @@ color: var(--white);
      bottom: 0;
      left: 0;
      width: 100%;
-     background-color:var(--white);
+     background-color:var(--bg);
      color: var(--black);
      padding: 20px 20px;
      text-align: center;
      box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px;
      z-index: 99;
-    display: none;
+    /* display: none; */
 }
  #cookies-popup p {
      margin: 0;
      color: var(--black);
 }
  #cookies-popup button {
-     background-color: var(--dark-pink);
+     background-color: var(--primary);
      color: #fff;
      border: none;
      padding: 10px 20px;
@@ -436,7 +506,7 @@ color: var(--white);
      border-radius: 10px;
 }
  #accept-cookies:hover {
-     background-color: var(--creme);
+     background-color: var(--secondary);
 }
 /* cookies css end here */
 .america-wrap .america-txt .contact-btn a:hover {
