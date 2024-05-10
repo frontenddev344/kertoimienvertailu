@@ -513,3 +513,46 @@ strong{
     border-color: #ffffff;
     color: #ffffff;
 }
+
+/* back to top */
+#button {
+    display: inline-block;
+    background-color: var(--secondary);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color:var(--primary);
+  }
+  #button:active {
+    background-color: var(--primary);
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
