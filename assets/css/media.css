@@ -1,5 +1,9 @@
 
-
+@media(min-width:1600px){
+    .sub-banner-img {
+        height: 65vh;
+    }
+}
 @media(max-width:1400px){
     .nav-links ul li a {
         font-size: 18px;
@@ -62,6 +66,12 @@
     }
     .contact-banner {
         height: 400px;
+    }
+    .search-bar {
+        height: 50px;
+    }
+    .search-bar button {
+        font-size: 16px;
     }
 }
 @media(max-width:991px){
@@ -149,10 +159,26 @@
     }
     .casino-wrap:last-child {
         margin-bottom: 0;
-        padding: 0px 0;
+        /* padding: 0px 0; */
+    }
+    .casino-wrap {
+        padding: 30px 0  10px 0;
+    }
+    .ptb-50 {
+        padding: 30px 0;
     }
     .bottom-txt p {
         width: 90%;
+    }
+    .search-bar {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    .search-bar button {
+        font-size: 12px;
+    }
+    .copy-right p {
+        font-size: 14px;
     }
 }
 @media(max-width:767px){
@@ -183,6 +209,7 @@
     }
     .banner-txt h1 {
         font-size: 30px;
+        word-wrap: break-word;
     }
     .banner-txt {
         width: 90%;
@@ -214,6 +241,20 @@
     .contact-bnr-wrap h3 {
         padding: 0 10px;
     }
+    .desktop-srch{
+        display: none;
+    }
+    .mobile-serch{
+        display: block !important;
+    }
+    .search-bar button{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    
+        font-size: 16px;
+        line-height: normal;
+}
 }
 @media(max-width:575px){
    

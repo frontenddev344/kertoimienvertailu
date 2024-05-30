@@ -117,7 +117,7 @@ h4 {
      
 }
 .nav-links ul li a.active{
-    color: var(--secondary);
+    color: var(--black);
 }
 
  .nav-links ul li a:hover {
@@ -155,7 +155,7 @@ h4 {
     position: relative;
 }
 .banner-txt {
-    width: 60%;
+    max-width: 900px;
     margin: 0 auto;
 }
 .banner-txt h1{
@@ -554,5 +554,38 @@ strong{
     opacity: 1;
     visibility: visible;
   }
+  .search-bar input {
+    width: 90%;
+    height: 100%;
+    padding-right: 20px;
+    border: none;
+}
+.search-bar {
+    height: 60px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+:focus-visible {
+    outline: none;
+}
+.search-bar button {
+    background-color: #521262;
+    color: #fff;
+    height: 80%;
+    width: 20%;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s linear;
 
-
+}
+.search-bar button:hover{
+    background-color: #761a8d;
+}
